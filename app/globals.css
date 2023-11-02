@@ -31,6 +31,11 @@ body {
   src: url('./assets/fonts/akira.otf');
 }
 
+@font-face {
+  font-family: "rugen";
+  src: url('./assets/fonts/rugen.ttf');
+}
+
 /* @font-face {
   font-family: 'korean';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
