@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import image1 from './assets/images/image.png';
 import image2 from './assets/images/image2.png';
 import Image from "next/image";
@@ -30,6 +31,7 @@ export default function Main() {
   const greenSubCircleRef = useRef();
   const redSubCircleRef = useRef();
   const yellowSubCircleRef = useRef();
+  const router = useRouter();
   
 
   useEffect(() => {  // tx1 move
@@ -148,7 +150,7 @@ export default function Main() {
   useEffect(() => {  // menu appear
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
-      markers: true,
+      markers: false,
       trigger: '.text1',
       start: '50% 40%', 
       end: '70% 30%',  
@@ -214,18 +216,30 @@ export default function Main() {
       case "blue" :
         blueCircleRef.current.classList.add("menu-scale-up");
         blueSubCircleRef.current.classList.add("menu-scale-sub-up");
+        setTimeout(() => {
+          router.push('./intro');
+        }, 1000)
         break;
       case "green" :
         greenCircleRef.current.classList.add("menu-scale-up");
         greenSubCircleRef.current.classList.add("menu-scale-sub-up");
+        setTimeout(() => {
+          router.push('./projects');
+        }, 1000)
         break;
       case "red" :
         redCircleRef.current.classList.add("menu-scale-up");
         redSubCircleRef.current.classList.add("menu-scale-sub-up");
+        setTimeout(() => {
+          router.push('./stack');
+        }, 1000)
         break;
       case "yellow" :
         yellowCircleRef.current.classList.add("menu-scale-up");
         yellowSubCircleRef.current.classList.add("menu-scale-sub-up");
+        setTimeout(() => {
+          router.push('./archive');
+        }, 1000)
         break;
       default :
         break;
@@ -236,12 +250,12 @@ export default function Main() {
 
   return (
     <div ref={section0Ref} className="section0 w-screen h-[130vh] bg-theme overflow-y-hidden">
-      {/* <Image src={image2} alt="..." className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-50" style={{transform:"rotate(-10deg)"}} /> */}
+      <Image src={image2} alt="..." className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-50" style={{transform:"rotate(-10deg)"}} />
       <div ref={section1Ref} className="section1 w-screen h-screen flex flex-col justify-center items-center">
         <div ref={image1Ref} className="fixed flex justify-center items-center" style={{transform:"rotate(-15deg)"}}>
           <Image src={image1} alt="..." className="myImage opacity-30 z-10 w-1/4 mr-[2vw] mb-12 show-up-img" />
         </div>
-        <div className="text1 w-1/2 h-1/3 flex flex-col justify-center ml-[8vw]">
+        <div className="text1 w-1/2 h-1/3 flex flex-col justify-center ml-[12vw]">
           <div ref={tx1Ref}>
             <p className="text-black text-[5rem] -mb-[2vh] show-up-1 transform translate-y-[1000px]" style={{fontFamily:'gmarket'}}>안녕하세요</p>
           </div>
