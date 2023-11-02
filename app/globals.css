@@ -36,6 +36,20 @@ body {
   src: url('./assets/fonts/rugen.ttf');
 }
 
+@font-face {
+  font-family: 'gmarket_thick';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gmarket';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: thin;
+  font-style: normal;
+}
+
 /* @font-face {
   font-family: 'korean';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');

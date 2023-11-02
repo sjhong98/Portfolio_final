@@ -30,10 +30,10 @@
         transform: scale(1);
     }
     50% {
-        transform: scale(4);
+        transform: scale(6.6);
     }
     100% {
-        transform: scale(12);
+        transform: scale(14);
     }
 }
 
@@ -42,24 +42,35 @@
         transform: scale(1);
     }
     50% {
-        transform: scale(5);
+        transform: scale(7.4);
     }
     100% {
-        transform: scale(12);
+        transform: scale(9);
     }
+}
+
+@keyframes menu-rem-anim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.menu-rem {
+    animation: menu-rem-anim 1s ease;
+    animation-fill-mode: forwards; 
 }
 
 .menu-scale-up {
     animation : menu-scale-up-anim 1s ease;
     animation-fill-mode: forwards;
-    z-index: 9999;
 }
 
 .menu-scale-sub-up {
     animation : menu-scale-up-sub-anim 1s ease;
     animation-fill-mode: forwards;
-    z-index: 9998;
-    background-color: #60A5FA;
 }
 
 .menu-down {

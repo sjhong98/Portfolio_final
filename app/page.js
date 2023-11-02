@@ -205,16 +205,27 @@ export default function Main() {
   }
 
   const handleMenuClick = (color) => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+
     switch(color) {
       case "blue" :
         blueCircleRef.current.classList.add("menu-scale-up");
         blueSubCircleRef.current.classList.add("menu-scale-sub-up");
         break;
       case "green" :
+        greenCircleRef.current.classList.add("menu-scale-up");
+        greenSubCircleRef.current.classList.add("menu-scale-sub-up");
         break;
       case "red" :
+        redCircleRef.current.classList.add("menu-scale-up");
+        redSubCircleRef.current.classList.add("menu-scale-sub-up");
         break;
       case "yellow" :
+        yellowCircleRef.current.classList.add("menu-scale-up");
+        yellowSubCircleRef.current.classList.add("menu-scale-sub-up");
         break;
       default :
         break;
@@ -232,17 +243,17 @@ export default function Main() {
         </div>
         <div className="text1 w-1/2 h-1/3 flex flex-col justify-center ml-[8vw]">
           <div ref={tx1Ref}>
-            <p className="text-black text-[5rem] -mb-6 show-up-1 transform translate-y-[1000px]" style={{fontFamily:'korean'}}>안녕하세요</p>
+            <p className="text-black text-[5rem] -mb-[2vh] show-up-1 transform translate-y-[1000px]" style={{fontFamily:'gmarket'}}>안녕하세요</p>
           </div>
           <div ref={tx2Ref}>
-            <p className="text-black text-[6rem] leading-[70px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'rugen'}}>FRONTEND</p>
-            <p className="text-black text-[6rem] leading-[70px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'rugen'}}>DEVELOPER</p>
+            <p className="text-black text-[6rem] leading-[90px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>FRONTEND</p>
+            <p className="text-black text-[6rem] leading-[90px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>DEVELOPER</p>
             <div ref={tx2_2Ref} className="opacity-0">
-              <p className="text-black text-[6rem] leading-[70px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'rugen'}}>PORTFOLIO</p>
+              <p className="text-black text-[6rem] leading-[90px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>PORTFOLIO</p>
             </div>
           </div>
           <div ref={tx3Ref}>
-            <p className="text-black text-[5rem] -mt-[7vh] show-up-3 transform translate-y-[1000px]" style={{fontFamily:'korean'}}>홍승재 입니다</p>
+            <p className="text-black text-[5rem] -mt-[11vh] show-up-3 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>홍승재 입니다</p>
           </div>
         </div>
       </div>
@@ -251,44 +262,55 @@ export default function Main() {
 
       <div className="menu h-[40vh] w-screen flex flex-row justify-center">
         <div ref={menuRef} className="h-[45vh] w-4/5 flex flex-row">
+
           <div 
             ref={blueMenuRef} 
-            className="w-1/4 bg-blue-500 cursor-pointer" 
+            className="w-1/4 bg-blue-500 cursor-pointer z-50 flex justify-center items-center" 
             onMouseOver={() => {handleMenuOver("blue")}} 
             onMouseOut={() => handleMenuOut("blue")}
             onClick={() => handleMenuClick("blue")}
           >
-            <div ref={blueCircleRef} className="blue-circle w-[20vw] h-[40vh] rounded-full bg-blue-500 absolute" />
-            <div ref={blueSubCircleRef} className="blue-circle w-[20vw] h-[40vh] rounded-full z-50" />
+            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>자기소개</p>
+            <div ref={blueCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-blue-500 absolute z-30" />
+            <div ref={blueSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-blue-400" />
             
           </div>
           <div 
             ref={greenMenuRef} 
-            className="w-1/4 bg-green-500 cursor-pointer" 
+            className="w-1/4 bg-green-500 cursor-pointer z-50 flex justify-center items-center" 
             onMouseOver={() => {handleMenuOver("green")}} 
             onMouseOut={() => handleMenuOut("green")}
             onClick={() => handleMenuClick("green")}
           >
-            <div ref={greenCircleRef} className="w-full h-[40vh] rounded-full bg-green-500" />
+            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>프로젝트</p>
+            <div ref={greenCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-green-500 absolute z-30" />
+            <div ref={greenSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-green-400" />
+
           </div>
           <div 
             ref={redMenuRef} 
-            className="w-1/4 bg-red-500 cursor-pointer" 
+            className="w-1/4 bg-red-500 cursor-pointer z-50 flex justify-center items-center" 
             onMouseOver={() => {handleMenuOver("red")}} 
             onMouseOut={() => handleMenuOut("red")}
             onClick={() => handleMenuClick("red")}
           >
-            <div ref={redCircleRef} className="w-full h-[40vh] rounded-full bg-red-500" />
+            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>기술스택</p>
+            <div ref={redCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-red-500 absolute z-30" />
+            <div ref={redSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-red-400" />
+
           </div>
           <div 
             ref={yellowMenuRef} 
-            className="w-1/4 bg-yellow-500 cursor-pointer" 
+            className="w-1/4 bg-yellow-500 cursor-pointer z-50 flex justify-center items-center" 
             onMouseOver={() => {handleMenuOver("yellow")}} 
             onMouseOut={() => handleMenuOut("yellow")}
             onClick={() => handleMenuClick("yellow")}
           >
-            <div ref={yellowCircleRef} className="w-full h-[40vh] rounded-full bg-yellow-500" />
-          </div>
+            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>기록</p>
+            <div ref={yellowCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-yellow-500 absolute z-30" />
+            <div ref={yellowSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-yellow-400" />
+
+          </div> 
         </div>
 
       </div>
