@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useRef } from "react";
 import image1 from './assets/images/image.png';
 import image2 from './assets/images/image2.png';
 import Image from "next/image";
 import './page.css';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Menu from "./module/menu";
 
 export default function Main() {
   const image1Ref = useRef();
@@ -19,19 +19,6 @@ export default function Main() {
   const tx2_2Ref = useRef();
   const tx3Ref = useRef();
   const menuRef = useRef();
-  const blueMenuRef = useRef();
-  const greenMenuRef = useRef();
-  const redMenuRef = useRef();
-  const yellowMenuRef = useRef();
-  const blueCircleRef = useRef();
-  const greenCircleRef = useRef();
-  const redCircleRef = useRef();
-  const yellowCircleRef = useRef();
-  const blueSubCircleRef = useRef();
-  const greenSubCircleRef = useRef();
-  const redSubCircleRef = useRef();
-  const yellowSubCircleRef = useRef();
-  const router = useRouter();
   
 
   useEffect(() => {  // tx1 move
@@ -163,89 +150,6 @@ export default function Main() {
     });
     ScrollTrigger.update();
   }, [])
-
-  const handleMenuOver = (color) => {
-    switch(color) {
-      case "blue" :
-        blueMenuRef.current.classList.add('menu-up');
-        break;
-      case "green" :
-        greenMenuRef.current.classList.add('menu-up');
-        break;
-      case "red" :
-        redMenuRef.current.classList.add('menu-up');
-        break;
-      case "yellow" :
-        yellowMenuRef.current.classList.add('menu-up');
-        break;
-      default:
-        break;
-    }
-  }
-
-  const handleMenuOut = (color) => {
-    switch(color) {
-      case "blue" :
-        blueMenuRef.current.classList.remove('menu-up');
-        blueMenuRef.current.classList.add('menu-down');
-        break;
-      case "green" :
-        greenMenuRef.current.classList.remove('menu-up');
-        greenMenuRef.current.classList.add('menu-down');
-        break;
-      case "red" :
-        redMenuRef.current.classList.remove('menu-up');
-        redMenuRef.current.classList.add('menu-down');
-        break;
-      case "yellow" :
-        yellowMenuRef.current.classList.remove('menu-up');
-        yellowMenuRef.current.classList.add('menu-down');
-        break;
-      default:
-        break;
-    }
-  }
-
-  const handleMenuClick = (color) => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-
-    switch(color) {
-      case "blue" :
-        blueCircleRef.current.classList.add("menu-scale-up");
-        blueSubCircleRef.current.classList.add("menu-scale-sub-up");
-        setTimeout(() => {
-          router.push('./intro');
-        }, 1000)
-        break;
-      case "green" :
-        greenCircleRef.current.classList.add("menu-scale-up");
-        greenSubCircleRef.current.classList.add("menu-scale-sub-up");
-        setTimeout(() => {
-          router.push('./projects');
-        }, 1000)
-        break;
-      case "red" :
-        redCircleRef.current.classList.add("menu-scale-up");
-        redSubCircleRef.current.classList.add("menu-scale-sub-up");
-        setTimeout(() => {
-          router.push('./stack');
-        }, 1000)
-        break;
-      case "yellow" :
-        yellowCircleRef.current.classList.add("menu-scale-up");
-        yellowSubCircleRef.current.classList.add("menu-scale-sub-up");
-        setTimeout(() => {
-          router.push('./archive');
-        }, 1000)
-        break;
-      default :
-        break;
-    }
-  }
-
   
 
   return (
@@ -274,61 +178,10 @@ export default function Main() {
 
       <div className="empty-space h-[30vh]" />
 
-      <div className="menu h-[40vh] w-screen flex flex-row justify-center">
-        <div ref={menuRef} className="h-[45vh] w-4/5 flex flex-row">
-
-          <div 
-            ref={blueMenuRef} 
-            className="w-1/4 bg-blue-500 cursor-pointer z-50 flex justify-center items-center" 
-            onMouseOver={() => {handleMenuOver("blue")}} 
-            onMouseOut={() => handleMenuOut("blue")}
-            onClick={() => handleMenuClick("blue")}
-          >
-            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>자기소개</p>
-            <div ref={blueCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-blue-500 absolute z-30" />
-            <div ref={blueSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-blue-400" />
-            
-          </div>
-          <div 
-            ref={greenMenuRef} 
-            className="w-1/4 bg-green-500 cursor-pointer z-50 flex justify-center items-center" 
-            onMouseOver={() => {handleMenuOver("green")}} 
-            onMouseOut={() => handleMenuOut("green")}
-            onClick={() => handleMenuClick("green")}
-          >
-            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>프로젝트</p>
-            <div ref={greenCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-green-500 absolute z-30" />
-            <div ref={greenSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-green-400" />
-
-          </div>
-          <div 
-            ref={redMenuRef} 
-            className="w-1/4 bg-red-500 cursor-pointer z-50 flex justify-center items-center" 
-            onMouseOver={() => {handleMenuOver("red")}} 
-            onMouseOut={() => handleMenuOut("red")}
-            onClick={() => handleMenuClick("red")}
-          >
-            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>기술스택</p>
-            <div ref={redCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-red-500 absolute z-30" />
-            <div ref={redSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-red-400" />
-
-          </div>
-          <div 
-            ref={yellowMenuRef} 
-            className="w-1/4 bg-yellow-500 cursor-pointer z-50 flex justify-center items-center" 
-            onMouseOver={() => {handleMenuOver("yellow")}} 
-            onMouseOut={() => handleMenuOut("yellow")}
-            onClick={() => handleMenuClick("yellow")}
-          >
-            <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>기록</p>
-            <div ref={yellowCircleRef} className="w-[20vw] h-[40vh] rounded-full bg-yellow-500 absolute z-30" />
-            <div ref={yellowSubCircleRef} className="w-[19.5vw] h-[39.5vh] rounded-full bg-yellow-400" />
-
-          </div> 
-        </div>
-
+      <div ref={menuRef}>
+        <Menu />
       </div>
-
+      
     </div>
   )
 }
