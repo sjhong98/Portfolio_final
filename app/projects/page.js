@@ -123,6 +123,7 @@ export default function Projects() {
                                     <div className="flex flex-row">
                                         <div className="w-[55px] h-[55px] bg-white rounded-lg mr-4 cursor-pointer flex justify-center items-center">
                                             <Image 
+                                                alt="..."
                                                 src='/images/home.png' 
                                                 className="w-[40px] h-[40px]" 
                                                 onClick={() => {router.push(`${item.url}`)}}
@@ -152,7 +153,7 @@ export default function Projects() {
                                     <div className="grid grid-cols-4 grid-row-3 w-[15vw] ml-12 ">
                                         { item.skill.map((item, index) => {
                                             return (
-                                                <div className="mr-2">
+                                                <div key={index} className="mr-2">
                                                     <div className="rounded-2xl w-[50px] h-[50px] bg-green-600 flex justify-center items-center">
                                                         <Image 
                                                             alt="..."
