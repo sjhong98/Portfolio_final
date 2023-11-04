@@ -197,7 +197,8 @@ export default function Stack() {
                         <Image 
                             alt="..."
                             src="/images/notion.png" 
-                            width={80} height={80} />
+                            width={80} height={80} 
+                        />
                         <p className="mt-2">Notion</p>
                     </div>
                     <div 
