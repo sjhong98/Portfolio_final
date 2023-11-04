@@ -25,11 +25,17 @@ export default function Archive() {
             <div className="w-screen h-[88vh] flex flex-col justify-center items-center">
                 <div className="w-1/3 h-[55vh] mt-32 bg-yellow-600 grid grid-cols-3 grid-rows-3 gap-4 p-12 rounded-3xl">
                     <div className="w-[150px] h-[150px] rounded-3xl bg-yellow-700 flex flex-col justify-center items-center">
-                        <Image src='/images/블로그.png' width={100} height={100} />
+                        <Image 
+                            alt="..."
+                            src='/images/블로그.png' 
+                            width={100} height={100} />
                         <p>네이버 블로그</p>
                     </div>
                     <div className="w-[150px] h-[150px] rounded-3xl bg-yellow-700 flex flex-col justify-center items-center ">
-                        <Image src='/images/github.png' width={200} height={200} />
+                        <Image 
+                            alt="..."
+                            src='/images/github.png' 
+                            width={200} height={200} />
                         <p className="-mt-8">Github</p>
                     </div>
                 </div>

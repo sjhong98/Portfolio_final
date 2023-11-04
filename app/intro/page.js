@@ -79,7 +79,8 @@ export default function Intro() {
     return (
         <div className="w-screen h-[220vh] bg-blue-500 overflow-hidden">
             <Image 
-                src={image2} alt="..." 
+                src={image2} 
+                alt="..." 
                 className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
                 style={{transform:"rotate(-10deg)"}} 
                 onClick={()=>{router.push('./')}}
@@ -90,7 +91,10 @@ export default function Intro() {
             </div>
             <div className="section1 w-full h-[180vh] flex flex-row transform translate-y-[5vh]">
                 <div ref={imageRef} className="w-1/2 mt-60 flex flex-col items-center">
-                    <Image src={myImage} className="w-3/5 z-50"/>
+                    <Image 
+                        alt="..."
+                        src={myImage} 
+                        className="w-3/5 z-50"/>
                 </div>
                 <div ref={gridRef} className="w-2/5 h-auto mt-[25vh] opacity-0">
                     <div ref={gridMoveRef} className="w-full h-auto grid grid-cols-3 grid-rows-6 gap-x-8 gap-y-8">

@@ -78,7 +78,8 @@ export default function Stack() {
     return (
         <div className="w-screen h-[181vh] bg-red-500 overflow-y-hidden">
             <Image 
-                src={image2} alt="..." 
+                src={image2} 
+                alt="..." 
                 className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
                 style={{transform:"rotate(-10deg)"}} 
                 onClick={()=>{router.push('./')}}
@@ -101,7 +102,10 @@ export default function Stack() {
                                 onMouseOver={() => handleOver(index)}
                                 onMouseOut={handleOut}
                             >
-                                <Image src={`/images/${item.title}.png`} width={80} height={80} />
+                                <Image 
+                                    alt="..."
+                                    src={`/images/${item.title}.png`} 
+                                    width={80} height={80} />
                                 <p>{item.title}</p>
                             </div>
                     
@@ -119,7 +123,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(13)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/firestore.png" width={130} height={130} />
+                        <Image 
+                            alt="..."
+                            src="/images/firestore.png" 
+                            width={130} height={130} />
                         <p>FireStore</p>
                     </div>
                     <div className={`${title}`} >
@@ -131,7 +138,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(14)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/firebase.png" width={100} height={100} />
+                        <Image 
+                            alt="..."
+                            src="/images/firebase.png" 
+                            width={100} height={100} />
                         <p>Firebase</p>
                     </div>
                     <div 
@@ -140,7 +150,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(15)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/vercel.png" width={90} height={90} />
+                        <Image 
+                            alt="..."
+                            src="/images/vercel.png" 
+                            width={90} height={90} />
                         <p>Vercel</p>
                     </div>
                     <div className={`${title}`} >
@@ -152,7 +165,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(16)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/npm.png" width={100} height={100} />
+                        <Image 
+                            alt="..."
+                            src="/images/npm.png" 
+                            width={100} height={100} />
                         <p>NPM</p>
                     </div>
                     <div />
@@ -162,7 +178,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(17)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/github actions.png" width={80} height={80} />
+                        <Image
+                            alt="..." 
+                            src="/images/github actions.png"
+                            width={80} height={80} />
                         <p className="mt-2">Github Actions</p>
                     </div>
                     <div />
@@ -175,7 +194,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(18)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/notion.png" width={80} height={80} />
+                        <Image 
+                            alt="..."
+                            src="/images/notion.png" 
+                            width={80} height={80} />
                         <p className="mt-2">Notion</p>
                     </div>
                     <div 
@@ -184,7 +206,10 @@ export default function Stack() {
                         onMouseOver={() => handleOver(19)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/discord.png" width={80} height={80} />
+                        <Image 
+                            alt="..."
+                            src="/images/discord.png" 
+                            width={80} height={80} />
                         <p className="mt-2">Discord</p>
                     </div>
                 </div>

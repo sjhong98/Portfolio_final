@@ -110,7 +110,11 @@ export default function Projects() {
                             onMouseOut={() => {handleOut(index)}}
                             className={active===index? "w-2/3 h-[40vh] flex mb-[10vh] mouse-over" : "w-2/3 h-[40vh] flex mb-[10vh] mouse-out"}
                         >
-                            <Image src={`/images/${item.title}.png`} className="w-[28vw] h-[30vh]" width={540} height={100} />
+                            <Image 
+                                alt="..."
+                                src={`/images/${item.title}.png`} 
+                                className="w-[28vw] h-[30vh]" 
+                                width={540} height={100} />
 
 
                             <div className="ml-12 -mt-2 flex flex-col h-full">
@@ -126,6 +130,7 @@ export default function Projects() {
                                         </div>
                                         <div className="w-[55px] h-[55px] bg-white rounded-lg cursor-pointer">
                                             <Image 
+                                                alt="..."
                                                 src='/images/github.png' 
                                                 className="w-[55px] h-[55px]" 
                                                 onClick={() => {router.push(`${item.github}`)}}
@@ -150,6 +155,7 @@ export default function Projects() {
                                                 <div className="mr-2">
                                                     <div className="rounded-2xl w-[50px] h-[50px] bg-green-600 flex justify-center items-center">
                                                         <Image 
+                                                            alt="..."
                                                             key={index} 
                                                             src={`/images/${item}.png`} 
                                                             className="w-[30px] h-[30px]" 

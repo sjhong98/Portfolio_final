@@ -154,10 +154,17 @@ export default function Main() {
 
   return (
     <div ref={section0Ref} className="section0 w-screen h-[130vh] bg-theme overflow-y-hidden">
-      <Image src={image2} alt="..." className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-50" style={{transform:"rotate(-10deg)"}} />
+      <Image 
+        src={image2} 
+        alt="..." 
+        className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-50" 
+        style={{transform:"rotate(-10deg)"}} />
       <div ref={section1Ref} className="section1 w-screen h-screen flex flex-col justify-center items-center">
         <div ref={image1Ref} className="fixed flex justify-center items-center" style={{transform:"rotate(-15deg)"}}>
-          <Image src={image1} alt="..." className="myImage opacity-30 z-10 w-1/4 mr-[2vw] mb-12 show-up-img" />
+          <Image 
+            src={image1} 
+            alt="..." 
+            className="myImage opacity-30 z-10 w-1/4 mr-[2vw] mb-12 show-up-img" />
         </div>
         <div className="text1 w-1/2 h-1/3 flex flex-col justify-center ml-[12vw]">
           <div ref={tx1Ref}>
