@@ -10,6 +10,7 @@ import Menu from "../module/menu";
 import './page.css';
 
 export default function Stack() {
+    const router = useRouter();
     const menuRef = useRef();
     const [active, setActive] = useState(-1);
     const title = "text-[2rem] leading-[4vh]";
@@ -76,7 +77,12 @@ export default function Stack() {
 
     return (
         <div className="w-screen h-[181vh] bg-red-500 overflow-y-hidden">
-            <Image src={image2} alt="..." className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" style={{transform:"rotate(-10deg)"}} />
+            <Image 
+                src={image2} alt="..." 
+                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
+                style={{transform:"rotate(-10deg)"}} 
+                onClick={()=>{router.push('./')}}
+            />
             <div className="w-full flex justify-center items-center fixed mt-12 z-50">
                 <p className="text-[6rem]" style={{fontFamily:'gmarket'}}>기술 스택</p>
                 <p className="text-[2rem] -mt-[4vh] " style={{fontFamily:'gmarket'}}>EXPERIENCED_SKILLS</p>
@@ -156,7 +162,7 @@ export default function Stack() {
                         onMouseOver={() => handleOver(17)}
                         onMouseOut={handleOut}
                     >
-                        <Image src="/images/github-actions.png" width={80} height={80} />
+                        <Image src="/images/github actions.png" width={80} height={80} />
                         <p className="mt-2">Github Actions</p>
                     </div>
                     <div />

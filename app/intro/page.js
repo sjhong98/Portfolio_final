@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, use } from "react";
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import image2 from '../assets/images/image2.png';
 import myImage from '../assets/images/myImage3.png';
@@ -17,7 +17,6 @@ export default function Intro() {
     const gridMoveRef = useRef();
     const router = useRouter();
     const gridItem = "bg-black opacity-40 rounded-xl flex flex-col justify-center items-center";
-    const [clicked, setClicked] = useState(false);
 
     useEffect(() => {
         gridRef.current.classList.add("grid-pop-up")
@@ -79,7 +78,12 @@ export default function Intro() {
 
     return (
         <div className="w-screen h-[220vh] bg-blue-500 overflow-hidden">
-            <Image src={image2} alt="..." className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" style={{transform:"rotate(-10deg)"}} />
+            <Image 
+                src={image2} alt="..." 
+                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
+                style={{transform:"rotate(-10deg)"}} 
+                onClick={()=>{router.push('./')}}
+            />
             <div className="w-full flex justify-center items-center fixed mt-12 z-50">
                 <p className="text-[6rem]" style={{fontFamily:'gmarket'}}>자기 소개</p>
                 <p className="text-[2rem] -mt-[4vh] " style={{fontFamily:'gmarket'}}>SELF_INTRODUCTION</p>
