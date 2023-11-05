@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import image2 from '../assets/images/image2.png';
 import Image from "next/image";
+import Logo from '../module/logo';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Menu from "../module/menu";
@@ -60,13 +60,7 @@ export default function Stack() {
     return (
         <div className="w-screen sm:h-[181vh] h-auto bg-red-500 overflow-y-hidden">
             <title>HSJ | Skills</title>
-            <Image 
-                src={image2} 
-                alt="..." 
-                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
-                style={{transform:"rotate(-10deg)"}} 
-                onClick={()=>{router.push('./')}}
-            />
+            <Logo />
             <Title title="기술 스택" eng="EXPERIENCED_SKILLS" />
             <div className="w-full sm:h-[191vh] h-auto transform translate-y-[20vh] flex flex-col items-center">
                 

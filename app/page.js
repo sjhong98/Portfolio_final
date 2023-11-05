@@ -2,12 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import image1 from './assets/images/image.png';
-import image2 from './assets/images/image2.png';
 import Image from "next/image";
 import './page.css';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Menu from "./module/menu";
+import Logo from './module/logo';
 
 export default function Main() {
   const image1Ref = useRef();
@@ -154,11 +154,7 @@ export default function Main() {
   return (
     <div ref={section0Ref} className="section0 w-screen h-[130vh] bg-theme overflow-y-hidden">
       <title>HSJ | Portfolio</title>
-      <Image 
-        src={image2} 
-        alt="..." 
-        className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-50" 
-        style={{transform:"rotate(-10deg)"}} />
+      <Logo />
       <div ref={section1Ref} className="section1 w-screen h-screen flex flex-col justify-center items-center">
         <div ref={image1Ref} className="fixed flex justify-center items-center" style={{transform:"rotate(-15deg)"}}>
           <Image 

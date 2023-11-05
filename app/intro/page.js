@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import image2 from '../assets/images/image2.png';
 import myImage from '../assets/images/myImage3.png';
 import Image from "next/image";
 import './page.css';
@@ -10,6 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Menu from "../module/menu";
 import Title from "../module/title";
+import Logo from '../module/logo';
 
 export default function Intro() {
     const gridRef = useRef();
@@ -80,13 +80,7 @@ export default function Intro() {
     return (
         <div className="w-screen h-[220vh] bg-blue-500 overflow-hidden">
             <title>HSJ | Intro</title>
-            <Image 
-                src={image2} 
-                alt="..." 
-                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
-                style={{transform:"rotate(-10deg)"}} 
-                onClick={()=>{router.push('./')}}
-            />
+            <Logo />
             <Title title="자기 소개" eng="SELF_INTRODUCTION" />
             <div className="section1 w-full sm:h-[180vh] h-[120vh] flex flex-row transform translate-y-[5vh]">
                 <div ref={imageRef} className="sm:w-1/2 w- mt-60 sm:flex hidden flex-col items-center">

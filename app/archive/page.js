@@ -3,9 +3,9 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import image2 from '../assets/images/image2.png';
 import Menu from "../module/menu";
 import Title from "../module/title";
+import Logo from '../module/logo';
 import './page.css';
 
 export default function Archive() {
@@ -25,12 +25,7 @@ export default function Archive() {
     return (
         <div className="section1 w-screen h-[130vh] bg-yellow-500 overflow-y-hidden">
             <title>HSJ | Archives</title>
-            <Image 
-                src={image2} alt="..." 
-                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
-                style={{transform:"rotate(-10deg)"}} 
-                onClick={()=>{router.push('./')}}
-            />
+            <Logo />
             <Title title="기록" eng="ARCHIVES" />
             <div className="w-screen h-[88vh] flex flex-col justify-center items-center">
                 <div className="w-1/3 h-[55vh] mt-32 bg-yellow-600 grid grid-cols-3 grid-rows-3 gap-4 p-12 rounded-3xl">
