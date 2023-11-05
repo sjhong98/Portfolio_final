@@ -7,6 +7,7 @@ export default function ProjectsComponent() {
     const [active, setActive] = useState(-1);
 
     const contentStyle = "text-[1rem] leading-[2.1vh] mt-3 mb-6";
+    const boxStyle = "sm:w-2/3 w-5/6 h-[40vh] flex sm:flex-row flex-col sm:mb-[10vh] mb-[90vh]";
 
     const projects = [
         {
@@ -54,7 +55,7 @@ export default function ProjectsComponent() {
             simpleExp : "텍스트 기반 SNS 플랫폼",
             content: <p className={`${contentStyle}`}>Scrapper는 텍스트 기반 SNS 플랫폼으로, Twitter나 Thread와 같이 텍스트를 기반으로 하면서도<br/>인스타그램 스토리처럼 업로드의 부담을 낮추어, 쉽게 공유하고 쉽게 상호작용할 수 있는 SNS로<br/>구상하였습니다. 또한 텍스트의 특성을 살려, 원하는 구체적인 부분에 좋아요를 표시할 수 있도록 하였습니다. Next.js과 TSX을 사용해보았고, vercel을 통해 배포하였습니다. 또한 Tailwind CSS를 사용하여 빠르고 간단하게 디자인을 구성해볼 수 있었습니다.</p>,
             functions : ["텍스트 기반 포스트 CRUD", "텍스트 드래그 방식 좋아요", "색으로 좋아요 수 표시", "포스트 스크랩"],
-            skill: ["typescript", "react", "next.js", "firestore", "vercel", "tailwind"],
+            skill: ["Typescript", "React", "Next.js", "Firestore", "Vercel", "Tailwind"],
             url: "https://scrapper-zeta.vercel.app/",
             github: "https://github.com/sjhong98/scrapper",
             dur: "23.10"
@@ -88,7 +89,7 @@ export default function ProjectsComponent() {
                             key={index} 
                             onMouseOver={() => handleOver(index)}
                             onMouseOut={() => {handleOut(index)}}
-                            className={active===index? "sm:w-2/3 w-5/6 h-[40vh] flex sm:flex-row flex-col sm:mb-[10vh] mb-[90vh] mouse-over" : "sm:w-2/3 w-5/6 h-[40vh] flex sm:flex-row flex-col sm:mb-[10vh] mb-[90vh] mouse-out"}
+                            className={active===index? `${boxStyle} mouse-over` : `${boxStyle} mouse-out`}
                         >
                             <Image 
                                 alt="..."
@@ -111,7 +112,7 @@ export default function ProjectsComponent() {
                                         <div className="w-[55px] h-[55px] bg-white rounded-lg cursor-pointer">
                                             <Image 
                                                 alt="..."
-                                                src='/images/github.png' 
+                                                src='/images/Github.png' 
                                                 className="w-[55px] h-[55px]" 
                                                 onClick={() => {router.push(`${item.github}`)}}
                                                 width={100} height={100} />

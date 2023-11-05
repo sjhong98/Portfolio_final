@@ -92,7 +92,7 @@ export default function Intro() {
                 <div ref={gridRef} className="sm:w-2/5 w-5/6 sm:ml-0 ml-8 h-auto mt-[25vh] opacity-0">
                     <div ref={gridMoveRef} className="w-full sm:h-auto h-[78vh] grid grid-cols-3 grid-rows-6 gap-x-8 gap-y-8">
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh]`}>
-                            <p className="sm:text-[2rem] text-[1rem]">이름</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">이름</p>
                             <p className="sm:text-[2.5rem] text-[1.2rem]">홍승재</p>
                         </div>
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh]`}>
