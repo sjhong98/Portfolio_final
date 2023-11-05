@@ -89,6 +89,7 @@ export default function Projects() {
 
     return (
         <div className="w-screen h-[360vh] bg-green-500 overflow-y-hidden">
+            <title>HSJ | Projects</title>
             <Image 
                 src={image2} alt="..." 
                 className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 

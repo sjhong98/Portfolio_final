@@ -12,6 +12,7 @@ export default function Archive() {
 
     return (
         <div className="section1 w-screen h-[130vh] bg-yellow-500 overflow-y-hidden">
+            <title>HSJ | Archives</title>
             <Image 
                 src={image2} alt="..." 
                 className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 

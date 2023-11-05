@@ -78,6 +78,7 @@ export default function Intro() {
 
     return (
         <div className="w-screen h-[220vh] bg-blue-500 overflow-hidden">
+            <title>HSJ | Intro</title>
             <Image 
                 src={image2} 
                 alt="..." 

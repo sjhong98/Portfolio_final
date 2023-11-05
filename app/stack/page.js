@@ -30,25 +30,6 @@ export default function Stack() {
         {title: "socket.io", image: null},
         {title: "Cypress", image: null},
     ]
-    const dbStack = [
-        {title: "FireStore", image: null},
-    ]
-    const deployStack = [
-        {title: "Firebase", image: null},
-        {title: "Vercel", image: null},
-        {title: "Github Actions", image: null},
-    ]
-    const config = [
-        {title: "NPM", image: null},
-    ]
-    const vcStack = [
-        {title: "Git", image: null},
-        {title: "Github", image: null},
-    ]
-    const communicationStack = [
-        {title: "Notion", image: null},
-        {title: "Discord", image: null},
-    ]
 
     const handleOver = (key) => {
         setActive(key);
@@ -77,10 +58,11 @@ export default function Stack() {
 
     return (
         <div className="w-screen h-[181vh] bg-red-500 overflow-y-hidden">
+            <title>HSJ | Skills</title>
             <Image 
                 src={image2} 
                 alt="..." 
-                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999]" 
+                className="fixed w-[12vw] mt-12 ml-12 cursor-pointer z-[9999] hidden sm-block" 
                 style={{transform:"rotate(-10deg)"}} 
                 onClick={()=>{router.push('./')}}
             />

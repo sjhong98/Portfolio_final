@@ -15,7 +15,6 @@ export default function Main() {
   const section1Ref = useRef();
   const tx1Ref = useRef();
   const tx2Ref = useRef();
-  const tx2_1Ref = useRef();
   const tx2_2Ref = useRef();
   const tx3Ref = useRef();
   const menuRef = useRef();
@@ -154,6 +153,7 @@ export default function Main() {
 
   return (
     <div ref={section0Ref} className="section0 w-screen h-[130vh] bg-theme overflow-y-hidden">
+      <title>HSJ | Portfolio</title>
       <Image 
         src={image2} 
         alt="..." 
@@ -164,7 +164,7 @@ export default function Main() {
           <Image 
             src={image1} 
             alt="..." 
-            className="myImage opacity-30 z-10 w-1/4 mr-[2vw] mb-12 show-up-img" />
+            className="myImage opacity-30 z-10 w-1/4 mr-[2vw] mb-12" />
         </div>
         <div className="text1 w-1/2 h-1/3 flex flex-col justify-center ml-[12vw]">
           <div ref={tx1Ref}>
