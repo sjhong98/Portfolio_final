@@ -16,7 +16,7 @@ export default function Stack() {
     const title = "text-[2rem] leading-[4vh]";
     const gridItem = "bg-red-700 rounded-2xl w-[8vw] aspect-square flex flex-col justify-center items-center text-[1rem]";
     const frontStack = [
-        {title: "HTML", image: null},
+        {title: "html", image: null},
         {title: "CSS", image: null},
         {title: "Javascript", image: null},
         {title: "Typescript", image: null},

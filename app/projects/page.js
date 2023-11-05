@@ -101,7 +101,6 @@ export default function Projects() {
                 <p className="text-[2rem] -mt-[4vh] " style={{fontFamily:'gmarket'}}>PROJECTS</p>
             </div>
 
-            {/* root div와 40vh 차이 필요 */}
             <div className="w-full h-[320vh] transform translate-y-[30vh] flex flex-col items-center">
                 { projects.map((item, index) => {
                     return (
