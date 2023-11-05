@@ -107,7 +107,7 @@ export default function Stack() {
                     >
                         <Image 
                             alt="..."
-                            src="/images/firestore.png" 
+                            src="/images/Firestore.png" 
                             width={130} height={130} />
                         <p>FireStore</p>
                     </div>
@@ -122,7 +122,7 @@ export default function Stack() {
                     >
                         <Image 
                             alt="..."
-                            src="/images/firebase.png" 
+                            src="/images/Firebase.png" 
                             width={100} height={100} />
                         <p>Firebase</p>
                     </div>
@@ -134,7 +134,7 @@ export default function Stack() {
                     >
                         <Image 
                             alt="..."
-                            src="/images/vercel.png" 
+                            src="/images/Vercel.png" 
                             width={90} height={90} />
                         <p>Vercel</p>
                     </div>
@@ -149,7 +149,7 @@ export default function Stack() {
                     >
                         <Image 
                             alt="..."
-                            src="/images/npm.png" 
+                            src="/images/NPM.png" 
                             width={100} height={100} />
                         <p>NPM</p>
                     </div>
@@ -162,7 +162,7 @@ export default function Stack() {
                     >
                         <Image
                             alt="..." 
-                            src="/images/github actions.png"
+                            src="/images/Github Actions.png"
                             width={80} height={80} />
                         <p className="mt-2">Github Actions</p>
                     </div>
@@ -178,7 +178,7 @@ export default function Stack() {
                     >
                         <Image 
                             alt="..."
-                            src="/images/notion.png" 
+                            src="/images/Notion.png" 
                             width={80} height={80} 
                         />
                         <p className="mt-2">Notion</p>
@@ -191,7 +191,7 @@ export default function Stack() {
                     >
                         <Image 
                             alt="..."
-                            src="/images/discord.png" 
+                            src="/images/Discord.png" 
                             width={80} height={80} />
                         <p className="mt-2">Discord</p>
                     </div>
