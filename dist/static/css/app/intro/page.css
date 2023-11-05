@@ -1,0 +1,100 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/intro/page.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+@keyframes grid-pop-up-anim {
+    0% {
+        transform: translateY(100vh);
+    }
+    90% {
+        transform: translateY(-1vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.grid-pop-up {
+    animation: grid-pop-up-anim 0.6s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/module/menu.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+@keyframes menu-up-anim {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes menu-down-anim {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes menu-scale-up-anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(6.6);
+    }
+    100% {
+        transform: scale(14);
+    }
+}
+
+@keyframes menu-rem-anim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes menu-scale-up-sub-anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(7.4);
+    }
+    100% {
+        transform: scale(9);
+    }
+}
+
+.menu-rem {
+    animation: menu-rem-anim 1s ease;
+    animation-fill-mode: forwards; 
+}
+
+.menu-scale-up {
+    animation : menu-scale-up-anim 1s ease;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+.menu-scale-sub-up {
+    animation : menu-scale-up-sub-anim 1s ease;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+.menu-down {
+    animation : menu-down-anim 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.menu-up {
+    animation: menu-up-anim 0.5s ease;
+    animation-fill-mode: forwards;
+}

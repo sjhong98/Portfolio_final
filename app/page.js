@@ -164,21 +164,37 @@ export default function Main() {
           <Image 
             src={image1} 
             alt="..." 
-            className="myImage opacity-30 z-10 w-1/4 mr-[2vw] mb-12" />
+            className="myImage opacity-30 z-10 sm:w-1/4 w-3/4 mr-[2vw] mb-12" />
         </div>
-        <div className="text1 w-1/2 h-1/3 flex flex-col justify-center ml-[12vw]">
+        <div className="text1 sm:w-1/2 w-5/6 h-1/3 flex flex-col justify-center sm:ml-[12vw] ml-[4vw]">
           <div ref={tx1Ref}>
-            <p className="text-black text-[5rem] -mb-[2vh] show-up-1 transform translate-y-[1000px]" style={{fontFamily:'gmarket'}}>안녕하세요</p>
+            <p 
+              className="text-black sm:text-[5rem] text-[3rem] -mb-[2vh] show-up-1 transform translate-y-[1000px]" 
+              style={{fontFamily:'gmarket'}}>
+                안녕하세요
+            </p>
           </div>
           <div ref={tx2Ref}>
-            <p className="text-black text-[6rem] leading-[90px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>FRONTEND</p>
-            <p className="text-black text-[6rem] leading-[90px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>DEVELOPER</p>
+            <p 
+              className="text-black sm:text-[6rem] text-[3rem] sm:leading-[90px] leading-[60px] show-up-2 transform translate-y-[1000px]" 
+              style={{fontFamily:'gmarket_thick'}}>
+                FRONTEND
+            </p>
+            <p 
+              className="text-black sm:text-[6rem] text-[3rem] sm:leading-[90px] show-up-2 transform translate-y-[1000px]" 
+              style={{fontFamily:'gmarket_thick'}}>
+                DEVELOPER
+            </p>
             <div ref={tx2_2Ref} className="opacity-0">
-              <p className="text-black text-[6rem] leading-[90px] show-up-2 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>PORTFOLIO</p>
+              <p 
+                className="text-black sm:text-[6rem] text-[3rem] sm:leading-[90px] leading-[60px] show-up-2 transform translate-y-[1000px]" 
+                style={{fontFamily:'gmarket_thick'}}>
+                  PORTFOLIO
+              </p>
             </div>
           </div>
           <div ref={tx3Ref}>
-            <p className="text-black text-[5rem] -mt-[11vh] show-up-3 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>홍승재 입니다</p>
+            <p className="text-black sm:text-[5rem] text-[3rem] -mt-[11vh] show-up-3 transform translate-y-[1000px]" style={{fontFamily:'gmarket_thick'}}>홍승재 입니다</p>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import image2 from '../assets/images/image2.png';
 import './page.css';
 import Menu from "../module/menu";
+import Title from "../module/title";
 
 export default function Projects() {
     const router = useRouter();
@@ -88,7 +89,7 @@ export default function Projects() {
 
 
     return (
-        <div className="w-screen h-[360vh] bg-green-500 overflow-y-hidden">
+        <div className="w-screen sm:h-[360vh] h-auto bg-green-500 overflow-y-hidden">
             <title>HSJ | Projects</title>
             <Image 
                 src={image2} alt="..." 
@@ -96,36 +97,32 @@ export default function Projects() {
                 style={{transform:"rotate(-10deg)"}} 
                 onClick={()=>{router.push('./')}}
             />
-            <div className="w-full flex justify-center items-center fixed mt-12 z-50">
-                <p className="text-[6rem]" style={{fontFamily:'gmarket'}}>프로젝트</p>
-                <p className="text-[2rem] -mt-[4vh] " style={{fontFamily:'gmarket'}}>PROJECTS</p>
-            </div>
+            <Title title="기술 스택" eng="Projects" />
 
-            <div className="w-full h-[320vh] transform translate-y-[30vh] flex flex-col items-center">
+            <div className="w-full sm:h-[320vh] h-auto transform translate-y-[30vh] flex flex-col items-center">
                 { projects.map((item, index) => {
                     return (
                         <div 
                             key={index} 
                             onMouseOver={() => handleOver(index)}
                             onMouseOut={() => {handleOut(index)}}
-                            className={active===index? "w-2/3 h-[40vh] flex mb-[10vh] mouse-over" : "w-2/3 h-[40vh] flex mb-[10vh] mouse-out"}
+                            className={active===index? "sm:w-2/3 w-5/6 h-[40vh] flex sm:flex-row flex-col sm:mb-[10vh] mb-[90vh] mouse-over" : "sm:w-2/3 w-5/6 h-[40vh] flex sm:flex-row flex-col sm:mb-[10vh] mb-[90vh] mouse-out"}
                         >
                             <Image 
                                 alt="..."
                                 src={`/images/${item.title}.png`} 
-                                className="w-[28vw] h-[30vh]" 
-                                width={540} height={100} />
-
-
-                            <div className="ml-12 -mt-2 flex flex-col h-full">
-                                <div className="flex flex-row justify-between">
-                                    <p className="text-[3rem]">{item.title}</p>
+                                className="sm:w-[28vw] sm:h-[30vh] w-[80vw]" 
+                                width={540} height={100} 
+                            />
+                            <div className="sm:ml-12 ml-0 -mt-2 flex flex-col h-full">
+                                <div className="flex sm:flex-row flex-col justify-between">
+                                    <p className="sm:text-[3rem] text-[2rem] sm:mt-0 mt-4">{item.title}</p>
                                     <div className="flex flex-row">
                                         <div className="w-[55px] h-[55px] bg-white rounded-lg mr-4 cursor-pointer flex justify-center items-center">
                                             <Image 
                                                 alt="..."
                                                 src='/images/home.png' 
-                                                className="w-[40px] h-[40px]" 
+                                                className="sm:w-[40px] sm:h-[40px]" 
                                                 onClick={() => {router.push(`${item.url}`)}}
                                                 width={100} height={100} />
                                         </div>
@@ -139,10 +136,10 @@ export default function Projects() {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-[1.2rem] -mt-2">: {item.simpleExp}</p>
+                                <p className="text-[1.2rem] sm:-mt-2 mt-4">: {item.simpleExp}</p>
                                 {item.content}
                                 <p className="text-[1rem] -mt-2">{item.dur}</p>
-                                <div className="flex flex-row justify-between">
+                                <div className="flex sm:flex-row flex-col justify-between">
                                     <div className="flex flex-col">
                                         { item.functions.map((item, index) => {
                                             return (
@@ -150,7 +147,7 @@ export default function Projects() {
                                             )
                                         })}
                                     </div>
-                                    <div className="grid grid-cols-4 grid-row-3 w-[15vw] ml-12 ">
+                                    <div className="grid grid-cols-4 grid-row-3 sm:w-[15vw] w-[70vw] sm:ml-12 ml-0 sm:mt-0 mt-4">
                                         { item.skill.map((item, index) => {
                                             return (
                                                 <div key={index} className="mr-2">

@@ -101,12 +101,13 @@ export default function Menu() {
       }
 
     const menuStyle = "w-1/4 cursor-pointer z-50 flex justify-center items-center";
-    const circleStyle = "w-[20vw] h-[40vh] rounded-full absolute z-30 opacity-0"
-    const subCircleStyle = "w-[19.5vw] h-[39.5vh] rounded-full opacity-0"
+    const circleStyle = "w-[20vw] h-[40vh] rounded-full absolute z-30 opacity-0";
+    const subCircleStyle = "w-[19.5vw] h-[39.5vh] rounded-full opacity-0";
+    const menuTitleStyle = "absolute z-50 sm:text-[4rem] text-[1.5rem]";
 
     return (
         <div className="menu h-[40vh] w-screen flex flex-row justify-center">
-            <div className="h-[45vh] w-4/5 flex flex-row">
+            <div className="h-[45vh] sm:w-4/5 w-screen flex flex-row">
                 <div 
                     ref={blueMenuRef} 
                     className={`${menuStyle} bg-blue-500`}
@@ -114,7 +115,7 @@ export default function Menu() {
                     onMouseOut={() => handleMenuOut("blue")}
                     onClick={() => handleMenuClick("blue")}
                 >
-                    <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>자기소개</p>
+                    <p className={`${menuTitleStyle}`} style={{fontFamily:'gmarket'}}>자기소개</p>
                     <div ref={blueCircleRef} className={`${circleStyle} bg-blue-500`}/>
                     <div ref={blueSubCircleRef} className={`${subCircleStyle} bg-blue-400`} />
                     
@@ -126,7 +127,7 @@ export default function Menu() {
                     onMouseOut={() => handleMenuOut("green")}
                     onClick={() => handleMenuClick("green")}
                 >
-                    <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>프로젝트</p>
+                    <p className={`${menuTitleStyle}`} style={{fontFamily:'gmarket'}}>프로젝트</p>
                     <div ref={greenCircleRef} className={`${circleStyle} bg-green-500`} />
                     <div ref={greenSubCircleRef} className={`${subCircleStyle} bg-green-400`} />
 
@@ -138,7 +139,7 @@ export default function Menu() {
                     onMouseOut={() => handleMenuOut("red")}
                     onClick={() => handleMenuClick("red")}
                 >
-                    <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>기술스택</p>
+                    <p className={`${menuTitleStyle}`} style={{fontFamily:'gmarket'}}>기술스택</p>
                     <div ref={redCircleRef} className={`${circleStyle} bg-red-500`} />
                     <div ref={redSubCircleRef} className={`${subCircleStyle} bg-red-400`} />
 
@@ -150,7 +151,7 @@ export default function Menu() {
                     onMouseOut={() => handleMenuOut("yellow")}
                     onClick={() => handleMenuClick("yellow")}
                 >
-                    <p className="absolute z-50 text-[4rem]" style={{fontFamily:'gmarket'}}>기록</p>
+                    <p className={`${menuTitleStyle}`} style={{fontFamily:'gmarket'}}>기록</p>
                     <div ref={yellowCircleRef} className={`${circleStyle} bg-yellow-500`} />
                     <div ref={yellowSubCircleRef} className={`${subCircleStyle} bg-yellow-400`} />
 

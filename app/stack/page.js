@@ -7,14 +7,15 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Menu from "../module/menu";
+import Title from "../module/title";
 import './page.css';
 
 export default function Stack() {
     const router = useRouter();
     const menuRef = useRef();
     const [active, setActive] = useState(-1);
-    const title = "text-[2rem] leading-[4vh]";
-    const gridItem = "bg-red-700 rounded-2xl w-[8vw] aspect-square flex flex-col justify-center items-center text-[1rem]";
+    const title = "sm:text-[2rem] text-[1rem] leading-[4vh]";
+    const gridItem = "bg-red-700 rounded-2xl sm:w-[8vw] w-[20vw] aspect-square flex flex-col justify-center items-center sm:text-[1rem] text-[0.6rem]";
     const frontStack = [
         {title: "HTML", image: null},
         {title: "CSS", image: null},
@@ -57,7 +58,7 @@ export default function Stack() {
     }, [])
 
     return (
-        <div className="w-screen h-[181vh] bg-red-500 overflow-y-hidden">
+        <div className="w-screen sm:h-[181vh] h-auto bg-red-500 overflow-y-hidden">
             <title>HSJ | Skills</title>
             <Image 
                 src={image2} 
@@ -66,15 +67,12 @@ export default function Stack() {
                 style={{transform:"rotate(-10deg)"}} 
                 onClick={()=>{router.push('./')}}
             />
-            <div className="w-full flex justify-center items-center fixed mt-12 z-50">
-                <p className="text-[6rem]" style={{fontFamily:'gmarket'}}>기술 스택</p>
-                <p className="text-[2rem] -mt-[4vh] " style={{fontFamily:'gmarket'}}>EXPERIENCED_SKILLS</p>
-            </div>
-            <div className="w-full h-[191vh] transform translate-y-[20vh] flex flex-col items-center">
+            <Title title="기술 스택" eng="EXPERIENCED_SKILLS" />
+            <div className="w-full sm:h-[191vh] h-auto transform translate-y-[20vh] flex flex-col items-center">
                 
-                <div className="section1 grid grid-cols-5 grid-rows-2 gap-x-8 gap-y-8 mt-20" >
+                <div className="section1 grid sm:grid-cols-5 grid-cols-3 grid-rows-2 gap-x-8 gap-y-8 mt-20" >
                     <div className={`${title}`} >
-                        <p className="text-[2rem] leading-[4vh]">Front-<br/>End</p>
+                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Front-<br/>End</p>
                     </div>
                     { frontStack.map((item, index) => {
                         return (
@@ -95,9 +93,9 @@ export default function Stack() {
                     })}
                 </div>
 
-                <div className="grid grid-cols-5 grid-rows-3 gap-x-8 gap-y-8 mt-12">
+                <div className="grid sm:grid-cols-5 grid-cols-3 grid-rows-3 gap-x-8 gap-y-8 mt-12">
                     <div className={`${title}`} >
-                        <p className="text-[2rem] leading-[4vh]">Data-<br/>Base</p>
+                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Data-<br/>Base</p>
                     </div>
                     <div 
                         key={13} 
@@ -111,6 +109,7 @@ export default function Stack() {
                             width={130} height={130} />
                         <p>FireStore</p>
                     </div>
+                    <div className="sm:hidden flex" /> 
                     <div className={`${title}`} >
                         <p>Deploy-<br/>Ment</p>
                     </div>
@@ -139,7 +138,7 @@ export default function Stack() {
                         <p>Vercel</p>
                     </div>
                     <div className={`${title}`} >
-                        <p className="text-[2rem] leading-[4vh]">Configu-<br/>ration</p>
+                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Configu-<br/>ration</p>
                     </div>
                     <div 
                         key={16} 
@@ -166,9 +165,9 @@ export default function Stack() {
                             width={80} height={80} />
                         <p className="mt-2">Github Actions</p>
                     </div>
-                    <div />
-                    <div className={`${title}`} >
-                        <p className="text-[2rem] leading-[4vh]">Commu-<br/>nication</p>
+                    <div className="sm:flex hidden" />
+                    <div className={`${title} sm:flex hidden`} >
+                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Commu-<br/>nication</p>
                     </div>
                     <div 
                         key={18} 
@@ -199,7 +198,7 @@ export default function Stack() {
                 
             </div>
 
-            <div ref={menuRef} className="">
+            <div ref={menuRef} className="sm:mt-0 mt-[90vh]">
                 <Menu />
             </div>
         </div>
