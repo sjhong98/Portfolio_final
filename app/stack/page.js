@@ -58,11 +58,11 @@ export default function Stack() {
     }, [])
 
     return (
-        <div className="w-screen sm:h-[181vh] h-auto bg-red-500 overflow-y-hidden">
+        <div className="w-screen sm:h-[192vh] h-auto bg-red-500 overflow-y-hidden">
             <title>HSJ | Skills</title>
             <Logo />
             <Title title="기술 스택" eng="EXPERIENCED_SKILLS" />
-            <div className="w-full sm:h-[191vh] h-auto transform translate-y-[20vh] flex flex-col items-center">
+            <div className="w-full sm:h-[202vh] h-auto transform translate-y-[20vh] flex flex-col items-center">
                 
                 <div className="section1 grid sm:grid-cols-5 grid-cols-3 grid-rows-2 gap-x-8 gap-y-8 mt-20" >
                     <div className={`${title}`} >
@@ -161,12 +161,42 @@ export default function Stack() {
                     </div>
                     <div className="sm:flex hidden" />
                     <div className={`${title} sm:flex hidden`} >
-                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Commu-<br/>nication</p>
+                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Version<br/>Control</p>
                     </div>
                     <div 
                         key={18} 
                         className={active===18 ? `${gridItem} scale-up` : `${gridItem} scale-down`} 
                         onMouseOver={() => handleOver(18)}
+                        onMouseOut={handleOut}
+                    >
+                        <Image 
+                            alt="..."
+                            src="/images/Github.png" 
+                            width={80} height={80} 
+                        />
+                        <p className="mt-2">Notion</p>
+                    </div>
+                    <div 
+                        key={19} 
+                        className={active===19 ? `${gridItem} tr scale-up` : `${gridItem} tr scale-down`} 
+                        onMouseOver={() => handleOver(19)}
+                        onMouseOut={handleOut}
+                    >
+                        <Image 
+                            alt="..."
+                            src="/images/Git.png" 
+                            width={80} height={80} />
+                        <p className="mt-2">Discord</p>
+                    </div>
+                    <div />
+                    <div />
+                    <div className={`${title} sm:flex hidden`} >
+                        <p className="sm:text-[2rem] text-[1rem] leading-[4vh]">Commu-<br/>nication</p>
+                    </div>
+                    <div 
+                        key={18} 
+                        className={active===20 ? `${gridItem} scale-up` : `${gridItem} scale-down`} 
+                        onMouseOver={() => handleOver(20)}
                         onMouseOut={handleOut}
                     >
                         <Image 
@@ -178,8 +208,8 @@ export default function Stack() {
                     </div>
                     <div 
                         key={19} 
-                        className={active===19 ? `${gridItem} tr scale-up` : `${gridItem} tr scale-down`} 
-                        onMouseOver={() => handleOver(19)}
+                        className={active===21 ? `${gridItem} tr scale-up` : `${gridItem} tr scale-down`} 
+                        onMouseOver={() => handleOver(21)}
                         onMouseOut={handleOut}
                     >
                         <Image 
