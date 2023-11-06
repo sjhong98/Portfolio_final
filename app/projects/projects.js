@@ -109,13 +109,13 @@ export default function ProjectsComponent() {
                                                 onClick={() => {router.push(`${item.url}`)}}
                                                 width={100} height={100} />
                                         </div>
-                                        <div className="w-[55px] h-[55px] bg-white rounded-lg cursor-pointer">
+                                        <div className="w-[55px] h-[55px] bg-white rounded-lg cursor-pointer flex justify-center items-center">
                                             <Image 
                                                 alt="..."
                                                 src='/images/Github.png' 
-                                                className="w-[55px] h-[55px]" 
+                                                className="w-[40px] h-[40px]" 
                                                 onClick={() => {router.push(`${item.github}`)}}
-                                                width={100} height={100} />
+                                                width={80} height={80} />
                                         </div>
                                     </div>
                                 </div>

@@ -93,32 +93,32 @@ export default function Intro() {
                     <div ref={gridMoveRef} className="w-full sm:h-auto h-[78vh] grid grid-cols-3 grid-rows-6 gap-x-8 gap-y-8">
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh]`}>
                             <p className="sm:text-[2rem] text-[1rem] text-white">이름</p>
-                            <p className="sm:text-[2.5rem] text-[1.2rem]">홍승재</p>
+                            <p className="sm:text-[2.5rem] text-[1.2rem] text-white">홍승재</p>
                         </div>
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh]`}>
-                            <p className="sm:text-[2rem] text-[1rem]">생년월일</p>
-                            <p className="sm:text-[2.5rem] text-[1.2rem]">98.09.01</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">생년월일</p>
+                            <p className="sm:text-[2.5rem] text-[1.2rem] text-white">98.09.01</p>
                         </div>
                         <div className={`${gridItem} row-span-2 sm:h-auto h-[24vh]`}>
-                            <p className="sm:text-[2rem] text-[1rem]">주소</p>
-                            <p className="sm:text-[2.5rem] text-[1.2rem] leading-[4.5vh]">서울시<br/>서대문구<br/>연희동</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">주소</p>
+                            <p className="sm:text-[2.5rem] text-[1.2rem] leading-[4.5vh] text-white">서울시<br/>서대문구<br/>연희동</p>
                         </div>
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh] col-span-2`}>
-                            <p className="sm:text-[2rem] text-[1rem]">CONTACT</p>
-                            <p className="sm:text-[2rem] text-[1rem]">010-2892-6408</p>
-                            <p className="sm:text-[2rem] text-[1rem]">sjhong98@icloud.com</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">CONTACT</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">010-2892-6408</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">sjhong98@icloud.com</p>
                         </div>
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh]`}>
-                        <p className="sm:text-[2.5rem] text-[1.2rem]">ESTP</p>
+                        <p className="sm:text-[2.5rem] text-[1.2rem] text-white">ESTP</p>
                         </div>
                         <div className={`${gridItem} sm:h-[25vh] h-[11vh] col-span-2`}>
-                            <p className="sm:text-[2rem] text-[1rem]">학력</p>
-                            <p className="sm:text-[2.5rem] text-[1rem] sm:leading-[4.5vh] leading-[2.3vh]">상명대학교<br/>역사콘텐츠학과 &<br/>컴퓨터과학과</p>
+                            <p className="sm:text-[2rem] text-[1rem] text-white">학력</p>
+                            <p className="sm:text-[2.5rem] text-[1rem] sm:leading-[4.5vh] leading-[2.3vh] text-white">상명대학교<br/>역사콘텐츠학과 &<br/>컴퓨터과학과</p>
                         </div>
                         <div className={`${gridItem} row-span-3 col-span-3 pl-[2vw] pr-[2vw] sm:h-auto h-[85vh]`}>
-                            <p className="text-[1.5rem]">자기소개</p>
-                            <p className="sm:text-[2rem] text-[1.1rem] mb-[3vh]">" 사람에게 다가가는 콘텐츠를 만들고 싶습니다 "</p>
-                            <p className="sm:text-[1.1rem] text-[0.9rem] leading-[3vh]">
+                            <p className="text-[1.5rem] text-white">자기소개</p>
+                            <p className="sm:text-[2rem] text-[1.1rem] mb-[3vh] text-white">" 사람에게 다가가는 콘텐츠를 만들고 싶습니다 "</p>
+                            <p className="sm:text-[1.1rem] text-[0.9rem] leading-[3vh] text-white">
                                 대학에서 역사콘텐츠학과 컴퓨터과학을 전공하였습니다.<br/><br/> 역사콘텐츠학을 통해 다양한 미디어를 통해 인문학을 콘텐츠화하여 대중에게 전달하는 방법에<br/>관하여 공부하였고, 컴퓨터과학을 통해 콘텐츠를 직접 만들어내는 기술에 대하여 공부하였습니다.
                                 <br/><br/>제가 개발자라는 직업에 매력을 느끼게 된 이유 역시, '콘텐츠'라는 연결고리 때문이었습니다.<br/>개발자는 소프트웨어라는 콘텐츠를 개발하고 적합한 미디어를 통해 사람들에게 전달하는<br/>사람이기 때문입니다.
                                 <br/><br/>특히,<br/>프론트엔드 개발자는 사람들과 직접적으로 접촉하는 콘텐츠를 만들어내는 만큼,<br/>좋은 콘텐츠에 대한 욕심은 동일하다고 생각합니다.
