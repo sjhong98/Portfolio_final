@@ -49,7 +49,7 @@ export default function Archive() {
                     >
                         <Image 
                             alt="..."
-                            src='/images/github.png' 
+                            src='/images/Github.png' 
                             width={100} height={100} />
                         <p>Github</p>
                     </div>
