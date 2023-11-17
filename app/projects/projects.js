@@ -101,20 +101,25 @@ export default function ProjectsComponent() {
                                 <div className="flex sm:flex-row flex-col justify-between">
                                     <p className="sm:text-[3rem] text-[2rem] sm:mt-0 mt-4">{item.title}</p>
                                     <div className="flex flex-row">
-                                        <div className="w-[55px] h-[55px] bg-white rounded-lg mr-4 cursor-pointer flex justify-center items-center">
+                                        <div 
+                                            className="w-[55px] h-[55px] bg-white rounded-lg mr-4 cursor-pointer flex justify-center items-center"
+                                            onClick={() => {router.push(`${item.url}`)}}
+                                        >
                                             <Image 
                                                 alt="..."
                                                 src='/images/home.png' 
                                                 className="sm:w-[40px] sm:h-[40px]" 
-                                                onClick={() => {router.push(`${item.url}`)}}
                                                 width={100} height={100} />
                                         </div>
-                                        <div className="w-[55px] h-[55px] bg-white rounded-lg cursor-pointer flex justify-center items-center">
+                                        <div 
+                                            className="w-[55px] h-[55px] bg-white rounded-lg cursor-pointer flex justify-center items-center"
+                                            onClick={() => {router.push(`${item.github}`)}}
+                                        >
                                             <Image 
                                                 alt="..."
                                                 src='/images/Github.png' 
                                                 className="w-[40px] h-[40px]" 
-                                                onClick={() => {router.push(`${item.github}`)}}
+                                                
                                                 width={80} height={80} />
                                         </div>
                                     </div>
