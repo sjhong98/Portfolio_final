@@ -28,7 +28,7 @@ export default function ProjectsComponent() {
             content: <p className={`${contentStyle}`}>UPMJ는 쉽고 편하게 여행계획을 세울 수 있도록 도와주는 서비스입니다. 관광지 공공데이터를 활용하여 원하는 여행지를 블록으로 만들고, 이를 드래그앤드롭으로 블록 쌓듯 여행 일정을 세울 수 있습니다. 본 프로젝트를 통해 소셜로그인 기능을 처음 구현해보았고, 드래그앤드롭 등 원하는 기능을 구현하기 위해 필요한 라이브러리를 찾아서 사용법을 익히고 직접 사용해 볼 수 있었습니다. 또한 socket.io를 활용하여 실시간 통신을 구현해보았으며, 컴포넌트 구조가 복잡해짐에 따라 필요성에 의해 Redux를 사용하였다는 점에서 의미 있는 프로젝트였습니다. 또한 제가 구상한 아이디어를 바탕으로 백엔드 팀원과 함께 작업하며, 협업 과정에서 원하는 결과를 얻기 위해 어떻게 소통해야할 것인지 고민해보게 된 계기가 되었습니다.</p>,
             functions : ["카카오 소셜로그인", "블록 생성", "드래그앤드롭 블록 쌓기", "일정별 여행 동선 확인", "일정 및 수정 실시간 반영", "그룹 채팅"],
             skill: ["Javascript", "React", "Redux", "Firebase", "Github Actions", "socket.io", "Webpack"],
-            url: "https://dyz.co.kr/",
+            url: "https://github.com/sjhong98/uPmJ",
             github: "https://github.com/sjhong98/uPmJ",
             dur: "23.06"
         },
@@ -38,7 +38,7 @@ export default function ProjectsComponent() {
             content: <p className={`${contentStyle}`}>GSAP을 통한 스크롤 이벤트에 따른 에니메이션 효과를 활용해보고 싶어서 제작한 페이지입니다. GSAP을 사용해볼 수 있었고, 디자인 웹페이지 레퍼런스들을 많이 찾아볼 수 있는 기회가 되었습니다. 또한, 제작한 웹페이지를 직접 Firebase를 이용하여 배포해보았다는데에 의미가 있습니다.</p>,
             functions : ["GSAP을 활용한 에니메이션"],
             skill: ["React", "Greensock", "Firebase"],
-            url: "https://dyz.co.kr/",
+            url: "https://george-ed6f3.web.app/",
             github: "https://github.com/sjhong98/showMeGSAP",
             dur: "23.07"
         },
@@ -48,7 +48,7 @@ export default function ProjectsComponent() {
             content: <p className={`${contentStyle}`}>DMRS은 DID를 활용하여 환자가 자신의 진료정보를 원하는 범위에서 의사에게 전달할 수 있으며, 의사는 이 정보를 바탕으로 진료기록을 조회하고 수정할 수 있습니다. DMRS는 제가 프론트엔드 개발로 참여한 프로젝트이며, React 기반으로 주어진 요구조건에 따라 제작하였습니다. React Native를 이용하여 처음으로 모바일 앱도 제작해보았으며, DID 정보가 서버를 통하지 않도록 하기 위해 서버 통신대신 socket.io를 사용하기도 하였습니다.</p>,
             functions : ["카카오 소셜로그인", "진료기록 관리", "앱)QR코드로 진료기록 제공", "앱)QR코드 스캐너로 진료기록 접근"],
             skill: ["Javascript", "React", "React Native", "socket.io"],
-            url: "",
+            url: "https://github.com/sjhong98/did",
             github: "https://github.com/sjhong98/did",
             dur: "23.07"
         },
@@ -68,7 +68,7 @@ export default function ProjectsComponent() {
             content: <p className={`${contentStyle}`}>포트폴리오를 정리하기 위해 제작한 페이지입니다. Greensock과 CSS keyframes 에니메이션을 사용하여 보기 즐거운 페이지를 만들고자 노력했고, 다양한 포트폴리오 레퍼런스들을 참고하여 제작하였습니다.</p>,
             functions : ["카카오 소셜로그인", "진료기록 관리", "모바일 앱에서 QR코드를 통해 진료기록 제공", "모바일 앱에서 QR코드 스캐너를 통해 진료기록 접근"],
             skill: ["Next.js", "Greensock", "CSS", "Vercel"],
-            url: "",
+            url: "https://hongseungjae.info/",
             github: "https://github.com/sjhong98/Portfolio_final",
             dur: "23.11"
         },
