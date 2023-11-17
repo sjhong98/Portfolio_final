@@ -2,9 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function ProjectsComponent() {
     const [active, setActive] = useState(-1);
+    const router = useRouter();
 
     const contentStyle = "text-[1rem] leading-[2.1vh] mt-3 mb-6";
     const boxStyle = "sm:w-2/3 w-5/6 h-[40vh] flex sm:flex-row flex-col sm:mb-[10vh] mb-[90vh]";
