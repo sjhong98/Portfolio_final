@@ -91,7 +91,7 @@ export default function ProjectsComponent() {
     }
 
     return (
-        <div className="w-full sm:h-[320vh] h-auto transform translate-y-[30vh] flex flex-col items-center">
+        <div className="w-full sm:h-auto h-auto transform translate-y-[30vh] flex flex-col items-center">
                 { projects.map((item, index) => {
                     return (
                         <div 
@@ -183,6 +183,7 @@ export default function ProjectsComponent() {
                 })
 
                 }
+                <div className="h-[30vh] w-screen" />
             </div>
     )
 }

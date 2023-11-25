@@ -6,7 +6,7 @@ import ProjectsComponent from "./projects";
 
 export default function Projects() {
     return (
-        <div className="w-screen sm:h-[360vh] h-auto bg-green-500 overflow-y-hidden">
+        <div className="w-screen sm:h-auto h-auto bg-green-500 overflow-y-hidden">
             <title>HSJ | Projects</title>
             <Logo />
             <Title title="프로젝트" eng="Projects" />
