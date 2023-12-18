@@ -186,7 +186,7 @@ export default function Stack() {
                             alt="..."
                             src="/images/Git.png" 
                             width={80} height={80} />
-                        <p className="mt-2">Discord</p>
+                        <p className="mt-2">Git</p>
                     </div>
                     <div />
                     <div />
