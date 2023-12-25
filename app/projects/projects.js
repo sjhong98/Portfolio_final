@@ -35,16 +35,16 @@ export default function ProjectsComponent() {
             github: "https://github.com/sjhong98/uPmJ",
             dur: "23.06"
         },
-        {
-            title: "ShowMe",
-            simpleExp : "GSAP을 활용한 자기소개 페이지",
-            content: <p className={`${contentStyle}`}>GSAP을 이용하여 스크롤 이벤트를 구현해보고자 제작한 페이지입니다.<br/><br/>페이지 횡스크롤, 컴포넌트 별 스크롤 속도조절, 고정(pin) 등 GSAP에서 제공하는 기능들을 활용하여 자기소개 페이지를 구현하였으며, 페이지 디자인을 위해 다양한 레퍼런스들을 참고할 수 있는 기회가 되었습니다.xs<br/><br/>또한 제작한 프로젝트를 직접 firebase를 통해 배포해보았다는 점에서 의미 있는 프로젝트였습니다.</p>,
-            functions : ["GSAP을 활용한 에니메이션"],
-            skill: ["React", "Greensock", "Firebase"],
-            url: "https://george-ed6f3.web.app/",
-            github: "https://github.com/sjhong98/showMeGSAP",
-            dur: "23.07"
-        },
+        // {
+        //     title: "ShowMe",
+        //     simpleExp : "GSAP을 활용한 자기소개 페이지",
+        //     content: <p className={`${contentStyle}`}>GSAP을 이용하여 스크롤 이벤트를 구현해보고자 제작한 페이지입니다.<br/><br/>페이지 횡스크롤, 컴포넌트 별 스크롤 속도조절, 고정(pin) 등 GSAP에서 제공하는 기능들을 활용하여 자기소개 페이지를 구현하였으며, 페이지 디자인을 위해 다양한 레퍼런스들을 참고할 수 있는 기회가 되었습니다.xs<br/><br/>또한 제작한 프로젝트를 직접 firebase를 통해 배포해보았다는 점에서 의미 있는 프로젝트였습니다.</p>,
+        //     functions : ["GSAP을 활용한 에니메이션"],
+        //     skill: ["React", "Greensock", "Firebase"],
+        //     url: "https://george-ed6f3.web.app/",
+        //     github: "https://github.com/sjhong98/showMeGSAP",
+        //     dur: "23.07"
+        // },
         {
             title: "DMRS",
             simpleExp : "블록체인 기반 신원정보 DID를 활용한 진료기록 관리 시스템",
@@ -74,6 +74,16 @@ export default function ProjectsComponent() {
             url: "https://hongseungjae.info/",
             github: "https://github.com/sjhong98/Portfolio_final",
             dur: "23.11"
+        },
+        {
+            title: "Muse",
+            simpleExp : "Open API를 활용한 박물관 웹페이지",
+            content: <p className={`${contentStyle}`}>The Metropolitan Meseum에서 제공되는 Open API를 활용해서 구현한 박물관 웹페이지입니다. <br/><br/>SSR을 이용한 Next.js SPA로 구현했고, 모달 구현, 스크롤에 따라 숨겨지는 헤더, Intersection Observer를 이용한 무한스크롤을 구현하였으며, styled-component를 통해 컴포넌트를 구현하고, tailwind CSS를 통해 세부 CSS를 구현하였습니다./</p>,
+            functions : ["Next.js SPA", "getServerSideProps를 이용한 SSR", "useRef를 이용한 모달", "scrollY와 eventListener를 이용한 동적헤더", "Intersection Observer를 이용한 무한스크롤", "styled-components를 통한 컴포넌트 구현"],
+            skill: ["Next.js", "React", "Typescript", "Vercel", "Tailwind", "Styled-Components"],
+            url: "https://muse-xi.vercel.app/",
+            github: "https://github.com/sjhong98/muse",
+            dur: "23.12"
         },
         
     ]
